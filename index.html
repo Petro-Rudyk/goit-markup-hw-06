@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="WebStudio" content="Effective Solutions for Your Business" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Main Page</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -56,6 +56,12 @@
             </li>
           </ul>
         </address>
+
+        <button class="header-menu-button" type="button">
+          <svg class="header-menu-icon" width="24" height="24">
+            <use href="./images/icons.svg#icon-header-menu"></use>
+          </svg>
+        </button>
       </div>
     </header>
 
@@ -130,7 +136,7 @@
       </section>
 
       <section class="team section">
-        <div class="container">
+        <div class="container-team">
           <h2 class="team-title">Our Team</h2>
           <ul class="team-list">
             <li class="team-item">
@@ -532,6 +538,83 @@
       </div>
     </footer>
 
+    <div class="mobile-menu">
+      <div class="container mobile-menu-container">
+        <button class="modal-close">
+          <svg class="modal-close-icon" width="8" height="8">
+            <use href="./images/icons.svg#icon-close">/</use>
+          </svg>
+        </button>
+
+        <nav class="mobile-menu-navigation">
+          <ul class="mobile-menu-list">
+            <li class="mobile-menu-item">
+              <a href="./index.html" class="mobile-menu-link">Studio</a>
+            </li>
+            <li class="mobile-menu-item">
+              <a href="" class="mobile-menu-link">Portfolio</a>
+            </li>
+            <li class="mobile-menu-item">
+              <a href="" class="mobile-menu-link">Contacts</a>
+            </li>
+          </ul>
+        </nav>
+
+        <address class="mobile-menu-contacts">
+          <ul class="mobile-menu-contacts-list">
+            <li class="mobile-menu-contacts-item">
+              <a class="mobile-menu-contacts-link" href="tel:+110001111111"
+                >+11 (000) 111-11-11</a
+              >
+            </li>
+            <li class="mobile-menu-contacts-item">
+              <a
+                class="mobile-menu-contacts-link"
+                href="mailto:info@devstudio.com"
+                >info@devstudio.com</a
+              >
+            </li>
+          </ul>
+        </address>
+
+        <div class="footer-wrapper-social-media mobil-social-media">
+          <ul class="social-list">
+            <li>
+              <a href="#" class="social-link">
+                <svg class="icon-image" width="24" height="24">
+                  <use href="./images/icons.svg#icon-instagram"></use>
+                </svg>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="social-link">
+                <svg class="icon-image" width="24" height="24">
+                  <use href="./images/icons.svg#icon-twitter"></use>
+                </svg>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="social-link">
+                <svg class="icon-image" width="24" height="24">
+                  <use href="./images/icons.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="social-link">
+                <svg class="icon-image" width="24" height="24">
+                  <use href="./images/icons.svg#icon-linkedin"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
     <div class="overlay">
       <div class="modal">
         <button type="button" class="modal-close">
@@ -617,12 +700,13 @@
               ><span class="accept-button">
                 <svg class="accept-button-icon" width="10" height="8">
                   <use href="./images/icons.svg#icon-check"></use>
-                </svg> </span
-              >I accept the terms and conditions of the &nbsp;<a
-                href=""
-                class="modal-check-label-policy"
-                >Privacy Policy</a
-              >
+                </svg>
+              </span>
+              <div class="modal-check-label-wrapper">
+                <span class="text-accept"
+                  >I accept the terms and conditions of the </span
+                ><a href="" class="modal-check-label-policy">Privacy Policy</a>
+              </div>
             </label>
           </div>
 

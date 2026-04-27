@@ -240,7 +240,7 @@ body {
   color: #fff;
   font-weight: 700;
   font-size: 36px;
-  line-height: 1.12;
+  line-height: 1.11;
   letter-spacing: 0.02em;
   text-align: center;
   margin: 0 auto;
@@ -764,10 +764,15 @@ body {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.mobile-menu-contacts-link.mobile-menu-phone-color {
+  color: #4d5ae5;
+}
+
+.footer-wrapper-social-media.mobil-social-media .social-list {
+  gap: 40px;
+}
+
 .footer-wrapper-social-media.mobil-social-media {
-  .social-list {
-    gap: 40px;
-  }
   margin-left: 0;
 }
 

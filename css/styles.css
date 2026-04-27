@@ -1170,6 +1170,12 @@ body {
     margin-left: 0;
   }
 
+  .footer-wrapper-subscribe {
+    width: 264px;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
   .footer-form {
     width: 453px;
     gap: 24px;

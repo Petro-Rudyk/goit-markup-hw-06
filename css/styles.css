@@ -206,12 +206,18 @@ body {
   background-color: #2e2f42;
   background-image:
     linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
-    url(../images/people-office.jpg);
+    url(../images/people-office-mob.jpg);
   max-width: 1440px;
   margin: 0 auto;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+
+  @media screen and (min-resolution: 2x) {
+    background-image:
+      linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+      url(../images/people-office-mob-2x.jpg);
+  }
 }
 
 .main-title-wrapper {
@@ -319,7 +325,14 @@ body {
   background-color: #f4f4fd;
 }
 
-.container-team {
+/* .container-team {
+  max-width: 584px;
+  padding-left: 16px;
+  padding-right: 16px;
+  margin: 0 auto;
+} */
+
+.container.team-container {
   max-width: 584px;
   padding-left: 16px;
   padding-right: 16px;
@@ -409,15 +422,11 @@ body {
 
 .portfolio-item {
   background: var(--white);
-  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.portfolio-item:hover,
-.portfolio-item:focus {
   box-shadow:
     0 2px 1px 0 rgba(46, 47, 66, 0.08),
     0 1px 1px 0 rgba(46, 47, 66, 0.16),
     0 1px 6px 0 rgba(46, 47, 66, 0.08);
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .portfolio-item:hover .portfolio-item-text-open,
@@ -765,9 +774,9 @@ body {
 
 .footer-wrapper-social-media.mobil-social-media {
   .social-list {
-    justify-content: center;
     gap: 40px;
   }
+  margin-left: 0;
 }
 
 .mobile-menu-link:hover,
@@ -968,7 +977,7 @@ body {
   align-items: center;
 }
 
-.modal-check-label-wrapper {
+.text-accept {
   font-weight: 400;
   font-size: 12px;
   line-height: 1.16667;
@@ -984,6 +993,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-shrink: 0;
   transition:
     background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -1015,7 +1025,7 @@ body {
 
 .modal-check-label-wrapper {
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
   gap: 1px;
 }
 
@@ -1067,6 +1077,18 @@ body {
     display: flex;
     flex-direction: column;
     gap: 12px;
+  }
+
+  .main-title {
+    background-image:
+      linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+      url(../images/people-office-tab.jpg);
+
+    @media screen and (min-resolution: 2x) {
+      background-image:
+        linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+        url(../images/people-office-tab-2x.jpg);
+    }
   }
 
   .main-title-wrapper {
@@ -1170,13 +1192,6 @@ body {
     max-width: 360px;
   }
 
-  .modal-check-label-wrapper {
-    display: flex;
-    flex-direction: row;
-    gap: 3px;
-    align-items: center;
-  }
-
   .accept-button {
     margin-right: 8px;
   }
@@ -1203,6 +1218,18 @@ body {
     padding-bottom: 23px;
   }
 
+  .main-title {
+    background-image:
+      linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+      url(../images/people-office.jpg);
+
+    @media screen and (min-resolution: 2x) {
+      background-image:
+        linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+        url(../images/people-office-2x.jpg);
+    }
+  }
+
   .main-title-wrapper {
     padding: 188px 0;
   }
@@ -1211,7 +1238,7 @@ body {
     margin-bottom: 48px;
   }
 
-  .container-team {
+  .container.team-container {
     max-width: 1158px;
     padding-left: 15px;
     padding-right: 15px;
@@ -1247,6 +1274,18 @@ body {
 
   .team-item {
     width: calc((100% - 72px) / 4);
+  }
+
+  .portfolio-item {
+    box-shadow: none;
+  }
+
+  .portfolio-item:hover,
+  .portfolio-item:focus {
+    box-shadow:
+      0 2px 1px 0 rgba(46, 47, 66, 0.08),
+      0 1px 1px 0 rgba(46, 47, 66, 0.16),
+      0 1px 6px 0 rgba(46, 47, 66, 0.08);
   }
 
   .portfolio-img {

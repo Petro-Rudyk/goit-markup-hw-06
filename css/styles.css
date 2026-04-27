@@ -496,10 +496,6 @@ body {
   align-items: baseline;
   flex-wrap: wrap;
   gap: 72px;
-  max-width: 288px;
-  padding-left: 16px;
-  padding-right: 16px;
-  margin: 0 auto;
 }
 
 .footer-wrapper {
@@ -609,10 +605,9 @@ body {
   display: flex;
   flex-direction: column;
   gap: 16px;
-  width: 453px;
+  width: 288px;
   margin-left: auto;
   margin-right: auto;
-  /* margin-left: auto; */
 }
 
 .footer-form {
